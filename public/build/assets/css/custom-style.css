@@ -1,0 +1,108 @@
+.login-wrapper .login-content {
+    width: 60%;
+}
+
+@media (max-width: 991.98px) {
+    .login-wrapper .login-content {
+        width: 100% !important;
+    }
+}
+
+.login-wrapper .login-content .login-userset {
+    width: 94%;
+}
+
+.login-wrapper .login-img {
+    max-width: 40%;
+}
+
+.header {
+    background: #fff !important;
+}
+
+.header-left #toggle_btn {
+    color: #fff !important;
+}
+
+.sidebar .sidebar-menu > ul > li.submenu-open ul li a {
+    color: #67748E !important;
+}
+
+.btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active {
+    color: #fff !important;
+}
+
+.page-header .btn-added {
+    color: #fff!important;
+}
+
+.page-item.active .page-link {
+    color: #fff!important;
+}
+
+.pagination li a {
+
+    color: #fff !important;
+}
+
+.btn-cancel {
+    color: #fff !important;
+}
+
+.btn-secondary {
+    color: #fff !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+}
+
+
+@media (max-width: 991.98px){
+    .header .header-left .logo {
+        left: 7%;
+        position: relative;
+    }
+}
+
+.btn-submit {
+    color: #fff !important;
+}
+
+
+a.block.w-full.pl-3.pr-4.py-2.border-l-4.border-transparent.text-left.text-base.font-medium.text-gray-600.hover\:text-gray-800.hover\:bg-gray-50.hover\:border-gray-300.focus\:outline-none.focus\:text-gray-800.focus\:bg-gray-50.focus\:border-gray-300.transition.duration-150.ease-in-out.dropdown-item {
+    color: #67748E !important;
+}
+
+.productsetimg {
+    min-height: 149px;
+    max-height: 149px;
+}
+
+.product-table {
+    height: 49vh;
+}
+
+.product-lists {
+    box-shadow: 2px 4px 4px 0px rgb(0 0 0 / 45%);
+}
+
+.product-lists-li{
+    width: 100%;
+}
+
+.productimg .productimgs img {
+    height: auto !important;
+}
+
+.fade-effect {
+    opacity: 0.5; /* Adjust the opacity value as needed */
+    filter: blur(2px); /* Apply a blur effect */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+.fade-effect:hover {
+    opacity: 1; /* Restore full opacity on hover */
+    filter: none; /* Remove the blur effect on hover */
+}
+
