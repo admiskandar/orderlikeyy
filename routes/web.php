@@ -37,10 +37,10 @@ Route::middleware([
 // MANAGE PROFILE
 Route::controller(App\Http\Controllers\CustomUserController::class)->group(function () {
     //ALL USER
-    Route::get('/user/list', 'user_list')->name('user.list')->middleware('userType:KESUKOMP');
-    Route::get('/user/edit/{id}', 'user_edit')->name('user.edit')->middleware('userType:KESUKOMP');
-    Route::post('/user/update/{id}', 'user_update')->name('user.update')->middleware('userType:KESUKOMP');
-    Route::get('/user/destroy/{id}', 'user_destroy')->name('user.destroy')->middleware('userType:KESUKOMP');
+    Route::get('/user/list', 'user_list')->name('user.list')->middleware('userType:0, 1');
+    Route::get('/user/edit/{id}', 'user_edit')->name('user.edit')->middleware('userType:0, 1');
+    Route::post('/user/update/{id}', 'user_update')->name('user.update')->middleware('userType:0, 1');
+    Route::get('/user/destroy/{id}', 'user_destroy')->name('user.destroy')->middleware('userType:0, 1');
 
     //KESUKOMP
     Route::get('/kesukomp/list', 'kesukomp_list')->name('kesukomp.list');
@@ -72,21 +72,21 @@ Route::controller(App\Http\Controllers\CustomUserController::class)->group(funct
 // MANAGE KIOSK
 Route::controller(App\Http\Controllers\KioskController::class)->group(function () {
     // kesukomp > all-kiosk
-    Route::get('/kiosk', 'kiosk_list')->name('kiosk.list')->middleware('userType:KESUKOMP');
+    Route::get('/kiosk', 'kiosk_list')->name('kiosk.list')->middleware('userType:0, 1');
 
     // kesukomp > all-kiosk > new-kiosk 
-    Route::get('/kiosk/add', 'kiosk_add')->name('kiosk.add')->middleware('userType:KESUKOMP');
-    Route::post('/kiosk/store', 'kiosk_store')->name('kiosk.store')->middleware('userType:KESUKOMP');
+    Route::get('/kiosk/add', 'kiosk_add')->name('kiosk.add')->middleware('userType:0, 1');
+    Route::post('/kiosk/store', 'kiosk_store')->name('kiosk.store')->middleware('userType:0, 1');
 
     // kesukomp > kiosk-info \\ customer > kiosk-info
-    Route::get('/kiosk/info/{id}', 'kiosk_info')->name('kiosk.info')->middleware('userType:KESUKOMP,Customer');
+    Route::get('/kiosk/info/{id}', 'kiosk_info')->name('kiosk.info')->middleware('userType:0, 1, 3');
 
     // kesukomp > all-kiosk > edit-kiosk 
-    Route::get('/kiosk/edit/{id}', 'kiosk_edit')->name('kiosk.edit')->middleware('userType:KESUKOMP');
-    Route::post('/kiosk/update/{id}', 'kiosk_update')->name('kiosk.update')->middleware('userType:KESUKOMP');
+    Route::get('/kiosk/edit/{id}', 'kiosk_edit')->name('kiosk.edit')->middleware('userType:0, 1');
+    Route::post('/kiosk/update/{id}', 'kiosk_update')->name('kiosk.update')->middleware('userType:0, 1');
 
     // kesukomp > all-kiosk > delete-kiosk
-    Route::get('/kiosk/destroy/{id}', 'kiosk_destroy')->name('kiosk.destroy')->middleware('userType:KESUKOMP');
+    Route::get('/kiosk/destroy/{id}', 'kiosk_destroy')->name('kiosk.destroy')->middleware('userType:0, 1');
 
     // kiosk-staff > my-kiosk
     Route::get('/kiosk/my-kiosk', 'kiosk_my_kiosk')->name('kiosk.my.kiosk');
@@ -104,21 +104,21 @@ Route::controller(App\Http\Controllers\KioskController::class)->group(function (
 // MANAGE MENU
 Route::controller(App\Http\Controllers\MenuController::class)->group(function () {
     // kesukomp > all-menu
-    Route::get('/menu', 'menu_list')->name('menu.list')->middleware('userType:KESUKOMP');
+    Route::get('/menu', 'menu_list')->name('menu.list')->middleware('userType:0, 1');
 
     // kesukomp > all-menu > new-menu
-    Route::get('/menu/add', 'menu_add')->name('menu.add')->middleware('userType:KESUKOMP');
-    Route::post('/menu/store', 'menu_store')->name('menu.store')->middleware('userType:KESUKOMP');
+    Route::get('/menu/add', 'menu_add')->name('menu.add')->middleware('userType:0, 1');
+    Route::post('/menu/store', 'menu_store')->name('menu.store')->middleware('userType:0, 1');
 
     // kesukomp > all-menu > menu-info
-    Route::get('/menu/info/{id}', 'menu_info')->name('menu.info')->middleware('userType:KESUKOMP,Customer');
+    Route::get('/menu/info/{id}', 'menu_info')->name('menu.info')->middleware('userType:0, 1, 3');
 
     // kesukomp > all-menu > edit-menu
-    Route::get('/menu/edit/{id}', 'menu_edit')->name('menu.edit')->middleware('userType:KESUKOMP');
-    Route::post('/menu/update/{id}', 'menu_update')->name('menu.update')->middleware('userType:KESUKOMP');
+    Route::get('/menu/edit/{id}', 'menu_edit')->name('menu.edit')->middleware('userType:0, 1');
+    Route::post('/menu/update/{id}', 'menu_update')->name('menu.update')->middleware('userType:0, 1');
 
     // kesukomp > all-menu > delete-menu
-    Route::get('/menu/destroy/{id}', 'menu_destroy')->name('menu.destroy')->middleware('userType:KESUKOMP');
+    Route::get('/menu/destroy/{id}', 'menu_destroy')->name('menu.destroy')->middleware('userType:0, 1');
 
 
     // staff > all-menu
