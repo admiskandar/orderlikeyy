@@ -40,17 +40,17 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Customer-1',
                 'email' => 'customer-1@orderlikey.com',
-                'user_type' => '3',
+                'user_type' => 'Customer',
             ],
             [
                 'name' => 'Customer-2',
                 'email' => 'customer-2@orderlikey.com',
-                'user_type' => '3',
+                'user_type' => 'Customer',
             ],
             [
                 'name' => 'Customer-3',
                 'email' => 'customer-3@orderlikey.com',
-                'user_type' => '3',
+                'user_type' => 'Customer',
             ],
         ]);
     }

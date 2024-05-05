@@ -8,7 +8,7 @@
     @php
         $user_type = Auth::user()->user_type;
     @endphp
-    @if ($user_type == '0' && '1')
+    @if ($user_type == 'KESUKOMP')
         <div class="page-wrapper">
             <div class="content">
                 <div class="row">
@@ -201,7 +201,7 @@
         </div>
     @endif
 
-    @if ($user_type == '2')
+    @if ($user_type == 'Kiosk Staff')
     <div class="page-wrapper">
         <div class="content">
             <div class="row">
@@ -357,7 +357,7 @@
         </div>
     @endif
 
-    @if ($user_type == '3')
+    @if ($user_type == 'Customer')
     <div class="page-wrapper">
         <div class="content">
             <div class="row">
