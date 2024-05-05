@@ -15,27 +15,27 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Super Admin',
                 'email' => 'superadmin@orderlikey.com',
-                'user_type' => '0',
+                'user_type' => 'KESUKOMP',
             ],
             [
                 'name' => 'Kesukomp',
                 'email' => 'kesukomp@orderlikey.com',
-                'user_type' => '1',
+                'user_type' => 'KESUKOMP',
             ],
             [
                 'name' => 'Kiosk-1',
                 'email' => 'kiosk-1@orderlikey.com',
-                'user_type' => '2',
+                'user_type' => 'Kiosk Staff',
             ],
             [
                 'name' => 'Kiosk-2',
                 'email' => 'kiosk-2@orderlikey.com',
-                'user_type' => '2',
+                'user_type' => 'Kiosk Staff',
             ],
             [
                 'name' => 'Kiosk-3',
                 'email' => 'kiosk-3@orderlikey.com',
-                'user_type' => '2',
+                'user_type' => 'Kiosk Staff',
             ],
             [
                 'name' => 'Customer-1',
