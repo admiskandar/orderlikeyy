@@ -3,8 +3,8 @@
         <div class="content">
             <div class="page-header">
                 <div class="page-title">
-                    <h4>Invoice Report</h4>
-                    <h6>Manage your Invoice Report</h6>
+                    <h4>Receipt Report</h4>
+                    <h6>Manage your Receipt Report</h6>
                 </div>
                 
             </div>
@@ -64,8 +64,8 @@
                                             <span class="checkmarks"></span>
                                         </label>
                                     </th>
-                                    <th>Invoice Number</th>
-                                    <th>Invoice Date</th>
+                                    <th>Receipt Number</th>
+                                    <th>Receipt Date</th>
                                     <th>Total Amount</th>
                                     <th>Total Paid</th>
                                     <th>Balance</th>
